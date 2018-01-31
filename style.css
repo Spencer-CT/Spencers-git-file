@@ -1,0 +1,41 @@
+body{
+        background-color: aquamarine;
+        text-align: center;
+        align-content: center;
+        position: center;
+    
+    }
+
+p   {   font-family:Helvetica;
+        background-color: khaki;
+        box-shadow: 3px;
+        
+    }
+
+h1 {
+        font-family:juice;
+        color:black;
+        font-size:40px;
+        font-kerning: 10px;
+}
+h2 {
+        font-family: impact;
+        color:khaki;
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-coloR: black;
+}
+header{
+    background-color: black;
+    color:aquamarine;
+    font-family: aller, bold;
+    margin-top: 0px;
+}
+
+footer{
+    margin-bottom:0px;
+    background-color:black;
+    color:aquamarine;
+    font-family:aller;
+
+}
