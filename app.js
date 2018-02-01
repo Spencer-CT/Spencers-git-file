@@ -1,92 +1,51 @@
-//ALCHEMY CODE LAB
-function acl() {
-    const name = prompt('Do you enjoy being at Alchemy Code Lab?');
-    console.log(name);
-    
-    if (name.toLowerCase() === 'yes' || name.toLowerCase() === 'y'){
-        alert('Hey, me too!');
-    
-    } else if (name.toLowerCase() === 'no' || name.toLowerCase() === 'n'){
-        alert;('Then why are you here?');
-    
-    } else {
-        alert('Time to code or get off the pot!');
+const questions = ['Do you enjoy being at Alchemy Code Lab?',
+    'Are the Green Bay Packers your favorite NFL team?',
+    'Have you seen the show Black Mirror?',
+    'Do you drink Yerba Mate?',
+    'Do you listen to ambient music when falling asleep?'
+];
+
+const verdict = ['yes', 'y', 'no', 'n'];
+
+const affirmR = ['Hey, me too!',
+    'Well yeah of course they are!',
+    'It\'s good right?! but dont watch it before bed!',
+    'I\'m all hyped out on caffeine!!',
+    'STILL HYPED ON CAFFEINE!!'
+];
+
+const neggyR = ['Then why are you here?',
+    'I knew you had bad taste',
+    'Don\'t watch it it\'s scary!!',
+    'It gets you hyped on caffeine!!',
+    'It\'s relaxing you should try it...'
+];
+
+const otherwiseR = ['Time to code or get off the pot!',
+    'Nobody ever went pro by being indecisive..',
+    'Invalid answer YO!!',
+    'This is a yes or no quesion bro',
+    'I wish a thousand years insomnia upon you.. '
+];
+
+function queries() {
+    for (let q = 0; q < 5 ; q++) {
+        const header = prompt(questions[q]);
+        console.log(header);
+        
+        if (header.toLowerCase() === verdict[0] || header.toLowerCase() === verdict[1]){
+            alert(affirmR[q]);
+        
+        } else if (header.toLowerCase() === verdict[2] || header.toLowerCase() === verdict[3]){
+            alert(neggyR[q]);
+        
+        } else {
+            alert(otherwiseR[q]);
+        }
     }
 }
 
-acl();
-
-//PACKERS FAN
-function nfl() {
-    const header = prompt('Are the Green Bay Packers your favorite NFL team?');
-    console.log(header);
-    
-    if (header.toLowerCase() === 'yes' || header.toLowerCase() === 'y'){
-        alert('Well yeah of course they are!');
-    
-    } else if (header.toLowerCase() === 'no' || header.toLowerCase() === 'n'){
-        alert('I knew you had bad taste');
-    
-    } else {
-        alert('Nobody ever went pro by being indecisive..');
-    }
-}
-
-nfl();
-
-//HAVE YOU SEEN THIS SHOW
-function mirror() {
-    const show = prompt('Have you seen the show Black Mirror?');
-    console.log(show);            
-    
-    if  (show.toLowerCase() === 'yes' || show.toLowerCase() === 'y' ){
-        alert('It\'s good right?! but dont watch it before bed!');
-    
-    } else if (show.toLowerCase() === 'no' || show.toLowerCase() === 'n' ){
-        alert('Don\'t watch it it\'s scary!!');
-    
-    } else {
-        alert('Invalid answer YO!!');
-    }
-}
-
-mirror();
-
-//DRINK MATE
-function mate() {
-    const tea = prompt('Do you drink Yerba Mate?');
-    console.log(tea);
-    
-    if  (tea.toLowerCase() === 'yes' || tea.toLowerCase() === 'y'){
-        alert('I\'m all hyped out on caffeine!!');
-    
-    } else if (tea.toLowerCase() === 'no' || tea.toLowerCase() === 'n'){
-        alert('It gets you hyped on caffeine!!' );
-    
-    } else {
-        alert('This is a yes or no quesion bro');
-    }
-}
-
-mate();
-
-//MUSIC
-function music() {
-    const music = prompt('Do you listen to ambient music when falling asleep?');
-    console.log(music);
-    
-    if (music.toLowerCase() === 'yes' || music.toLowerCase() === 'y'){
-        alert('STILL HYPED ON CAFFEINE!!');
-    
-    } else if (music.toLowerCase() === 'no' || music.toLowerCase() === 'n'){
-        alert('It\'s relaxing you should try it...');
-    
-    } else {
-        alert('I wish a thousand years insomnia upon you.. ');
-    }
-}
-
-music();
+queries();
 
 //GUESS MY AGE
 function age() {
