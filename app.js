@@ -6,7 +6,7 @@ const questions = ['Do you enjoy being at Alchemy Code Lab?',
     'Are the Green Bay Packers your favorite NFL team?',
     'Have you seen the show Black Mirror?',
     'Do you drink Yerba Mate?',
-    'Do you listen to ambient music when falling asleep?'
+    'Do you listen to ambient music or white noise when falling asleep?'
 ];
 
 const verdict = ['yes', 'y', 'no', 'n'];
@@ -88,7 +88,7 @@ age();
 
 function states() {
 
-    const st = ['wisconsin', 'colorado', 'portland'];
+    const st = ['wisconsin', 'colorado', 'oregon'];
 
     for ( let i = 0; i < 4; i++) {
         const guess = prompt('What state do you think I\'ve lived in?');
@@ -106,4 +106,4 @@ function states() {
 
 states();
 
-alert('You got' + count + ' answers correct!');
+alert('You gave' + ' ' + count + ' ' + ' acceptable answers!');
